@@ -599,16 +599,21 @@ Read Day 3 - Wrap Up. Then answer the following.
 
     ii. As tables expand, region rebalancing occurs automatically; regionservers can be added to scale linearly.
 
+    iii. ideal for billions of rows, random read/write access, write-intensive workloads, and time series data.
+
+
     ```
 
 2. List the cons of HBase as described in our text.
 
     ```
-    i. Numerous tiny cells and versions might slow the scans and inflate metadata.
+    i. Column familes must be defined upfront.
+    
+    ii. Numerous tiny cells and versions might slow the scans and inflate metadata.
 
-    ii. Not the best option for OLTP with small datasets.
+    iii. Not the best option for OLTP with small datasets.
 
-    iii. While recovery and reassignment can halt workloads, region server failover is safe.
+    iv. While recovery and reassignment can halt workloads, region server failover is safe.
     ```
 
 
